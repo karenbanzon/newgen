@@ -1,0 +1,42 @@
+// Form Styles
+
+input, select, textarea, {
+	@include border-radius(3px);
+	padding: 7px;
+	width: 100%;
+	border: 1px solid #ccc;
+	font-family: $copyFont;
+	font-size: 1em;
+	line-height: 1.15em;
+	&:focus {
+		@include single-box-shadow($mayaRed, 0px, 0px, 7px);
+		outline: none;
+	}
+}
+
+select.small, input.small { width: auto; display: inline; }
+
+fieldset {
+	border: 0;
+	padding: 0;
+	margin: 20px 0;
+	.required {
+		*:after {
+			content: "*";
+			color: $cMagazineRed;
+		}
+	}
+	div { margin: 10px 0;}
+}
+
+// Google Form
+
+.ss-base-body {
+	.required-message {
+		color: $red;
+		display: none;
+	}
+
+	.ss-required-asterisk { color: $red; }
+
+}

@@ -1,0 +1,65 @@
+// Buttons
+
+button, .button { 	
+	@include border-radius(2px);
+	width: auto; 
+	margin: 0; padding: 10px 20px 11px; 
+	background: $mayaRed; 
+	border: none;
+	color: $white !important; 
+	cursor: pointer; 
+	display: inline-block; 	
+	font: normal 14px $copyFont;
+	text-align: center; 
+	text-decoration: none;
+
+	&.small { padding: 5px; }
+
+	&.tiny {
+		text-transform: uppercase;
+		font-size: 0.8em;
+		padding: 3px 5px;
+	}
+
+	&:hover, &:focus { 
+		background: $mayaRed + 20; 
+		color: $white;
+	}
+
+	&.gray { 
+		background-color: $ash;
+		&:hover, &:focus { background-color: $ash + 20; }
+	}
+
+	&.black {
+		background-color: $darkGray;
+		&:hover, &:focus { background-color: $darkGray + 20; }
+	}
+
+	&.plum {
+		background-color: $plum;
+		&:hover, &:focus { background-color: $plum + 20; }
+	}
+
+	&.teal {
+		background-color: $teal;
+		&:hover, &:focus { background-color: $teal + 20; }
+	}
+
+	&.brown {
+		background-color: $brown;
+		&:hover, &:focus { background-color: $brown + 20; }
+	}
+
+	&.orange {
+		background-color: $orange;
+		&:hover, &:focus { background-color: $orange + 20; }
+	}
+
+	&.white {
+		background-color: $white;
+		color: $darkGray !important;
+		&:hover, &:focus { background-color: $grayHighlight; }
+	}
+}
+

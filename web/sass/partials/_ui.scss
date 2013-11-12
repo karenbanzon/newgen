@@ -1,0 +1,65 @@
+// UI
+
+	//Imports
+	@import 'partials/elements/buttons';
+
+	// Breadcrumbs
+
+	.breadcrumb {
+		@include row;
+		background: $mayaRed;
+		padding: 10px 20px;
+		margin-bottom: 20px;
+		a {
+			color: $white;
+			text-transform: none;
+			font-weight: 100;
+			&.active { font-weight: 400; cursor: default; }
+		}
+		span {
+			color: $white;
+			vertical-align: middle;
+		}
+	}
+
+	// Article Summary
+
+	.articleSummary {
+		@include clearfix;
+		margin-bottom: 20px;
+		img, & > div { float: left; }
+		& > div {
+			padding: 10px;
+			width: 585px;
+			* { display: block; }
+			h4 { margin-bottom: 10px; }
+			a { display: inline; }
+		}
+	}
+
+	// Cards
+
+	.card {
+		@include col(4);
+		background: $orange;
+		float: left;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		div { padding: 10px; }
+		.caption {
+			h1, h2, h3, h4, h5, h6 {
+				color: $white;
+			}
+			&:hover, &:focus {
+				background: $orange + 20;
+			}
+		}
+		&.text {
+			padding: 20px 10px;
+			text-align: center;
+			h3 { color: $white; font-family: $baseSerif; }
+			&:hover, &:focus {
+				background: $orange + 20;
+			}
+		}
+	}

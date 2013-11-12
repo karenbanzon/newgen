@@ -1,0 +1,67 @@
+// Base Rules
+
+	* { 
+		@include box-sizing(border-box); 
+
+		&:focus {
+			//outline: 1px solid $ash;
+		}
+	}
+	
+	html, body { 
+		margin: 0; padding: 0; 
+		background: $teal;
+		min-width: 1100px;
+	}
+
+	a { 
+		@include transition(background, 0.1s);
+
+		text-decoration: none;
+		color: $mayaRed; 
+
+		&:hover { 
+			color: $mayaRed + 20; 
+		}
+	}
+
+	a.white { color: $white; }
+
+	hr {
+		border: none;
+		border-top: 1px solid $ash;
+		margin: 10px 0;
+		&.platinum {
+			border-top: 1px solid $platinum;
+		}
+		&.brown {
+			border-top: 1px solid $platinum;
+		}
+		&.darkGray {
+			border-top: 1px solid $darkGray;
+		}
+	}
+
+	img { vertical-align: middle; }
+
+	.inner {
+		@include row;
+	}
+
+	figcaption {
+		padding: 10px;
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+	
+		thead {
+			//@extend .borderBottom;
+		}	
+		tr:nth-child(even) {
+			background: $grayHighlight;
+		}
+	}
+	
+

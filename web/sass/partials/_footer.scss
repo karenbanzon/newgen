@@ -1,0 +1,27 @@
+// Footer styles
+
+.siteFoot {
+	@include row;
+	@include clearfix;
+	padding: 10px;
+	color: $ash;
+	background: $white;
+	text-align: center;
+	font-size: 0.8em;
+	.social {
+		float: left;
+		font-size: 2em;
+		a {
+			// padding: 0 10px;
+			color: $ash;
+			&:hover, &:focus { color: $ash + 20; }
+		}
+		span { padding: 0 10px;}
+	}
+	.copyright {
+		float: right;
+		padding-top: 5px;
+	}
+}
+
+img.typekit-badge { display: none !important; }

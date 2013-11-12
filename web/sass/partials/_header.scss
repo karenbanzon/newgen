@@ -1,0 +1,83 @@
+// Header styles
+
+.siteHead {
+	@include row;
+	@include clearfix;
+	// background: $;
+	#brand {
+	//@include opacity(0.7);
+	//background-color: $darkGray;
+		padding: 20px;
+		position: relative;
+		& > * { @include opacity(1.0); }
+		& > div {
+			@include row();
+			color: $mayaRed;
+		}
+		.logo {
+			width: 125px;
+			margin-right: 20px;
+			float: left;
+		}
+		// .name {
+		// 	float: left;
+		// 	margin-left: 20px;
+		// 	p {
+		// 		color: $white;
+		// 		font-family: $baseSerif;
+		// 		margin: 0;
+		// 	}
+		// 	.greekName {
+		// 		font-size: 2em;
+		// 		margin-top: 28px;
+		// 		margin-bottom: 0;
+		// 	}
+		// 	.englishName {
+		// 		font-size: 1.2em;
+		// 	}
+		// }
+		// .iconseal {
+		// 	float: left;
+		// 	font-size: 7em;
+		// 	color: $sdpYellow;	
+		// }
+	}
+	h1 { margin-top: 30px; }
+	h1, h4 { color: $white; }
+	nav.small {
+		//@include row();
+		position: absolute;
+		top: 10px;
+		right: -20px;
+		margin-right: 10px;
+		// margin-bottom: 3px;
+		a {
+			padding: 10px 20px 3px 20px;
+			color: $white;
+			// &:hover, &:focus {
+			// 	color: $mayaRed + 20;
+			// }
+			// &.active, &:active { border-bottom: 3px solid $mayaRed; }
+		}
+	}
+
+	nav.tabs {
+		position: absolute;
+		bottom: 8px;
+		right: 0;
+		a {
+			padding: 10px;
+			background: $plum;
+			color: $white;
+			font-family: $baseFont;
+			font-size: 1.5em;
+			letter-spacing: 5px;
+			font-weight: lighter;
+			margin: 0 10px;
+			&:hover, &:focus {
+				background: $plum - 20;
+			}
+			&.active { background: $orange; }
+		}
+	}
+}
